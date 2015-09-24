@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface NSLeftMenuCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel *nameLabel;
+@property (nonatomic, weak) IBOutlet UIImageView *icon;
+
+
+
 
 @end

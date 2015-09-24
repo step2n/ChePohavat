@@ -55,24 +55,43 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"leftMenuCell"];
+    
+    static NSString *leftCellIdentifier = @"NSLeftMenuCell";
+    
+    
+      NSLeftMenuCell *cell =  [tableView dequeueReusableCellWithIdentifier:leftCellIdentifier];
 	
+    
+    if (cell == nil)
+        
+    {
+        
+        NSArray *nibArray = [[NSBundle mainBundle] loadNibNamed:@"LeftMenuCell" owner:self options:nil];
+        
+        cell = [nibArray objectAtIndex:0];
+        
+    }
+    
+    
 	switch (indexPath.row)
 	{
 		case 0:
-			cell.textLabel.text = @"Сортировка";
-			break;
+			  cell.nameLabel.text = @"Сортировка";
+              cell.icon.image = [UIImage imageNamed:@"sortirovka.png"];
+              break;
 			
 		case 1:
-			cell.textLabel.text = @"Профиль";
-			break;
+			cell.nameLabel.text = @"Профиль";
+            cell.icon.image = [UIImage imageNamed:@"sortirovka.png"];
+            
+            break;
 			
 		case 2:
-			cell.textLabel.text = @"Настройки";
+			cell.nameLabel.text  = @"Настройки";
 			break;
 			
 		case 3:
-			cell.textLabel.text = @"Избранное";
+			cell.nameLabel.text = @"Избранное";
 			break;
 	}
 	

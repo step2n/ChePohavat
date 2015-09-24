@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SlideNavigationController.h"
+#import "NSLeftMenuCell.h"
 
 @interface LeftMenuViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 

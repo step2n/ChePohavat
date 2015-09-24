@@ -41,6 +41,9 @@
 		24929BAD1BB4955E00857E0D /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24929BAA1BB4955E00857E0D /* MainStoryboard_iPad.storyboard */; };
 		24929BAE1BB4955E00857E0D /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24929BAB1BB4955E00857E0D /* MainStoryboard_iPhone.storyboard */; };
 		24929BB11BB4B01500857E0D /* NSLeftMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24929BB01BB4B01500857E0D /* NSLeftMenuCell.m */; };
+		24929BB31BB4B12C00857E0D /* sortirovka.png in Resources */ = {isa = PBXBuildFile; fileRef = 24929BB21BB4B12C00857E0D /* sortirovka.png */; };
+		24929BB81BB4B7AC00857E0D /* LeftMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24929BB71BB4B7AC00857E0D /* LeftMenuCell.xib */; };
+		24929BBA1BB4B99900857E0D /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 24929BB91BB4B99900857E0D /* profile.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,8 +108,11 @@
 		24929BA91BB4955E00857E0D /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		24929BAA1BB4955E00857E0D /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		24929BAB1BB4955E00857E0D /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		24929BAF1BB4B01500857E0D /* NSLeftMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSLeftMenuCell.h; sourceTree = "<group>"; };
-		24929BB01BB4B01500857E0D /* NSLeftMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSLeftMenuCell.m; sourceTree = "<group>"; };
+		24929BAF1BB4B01500857E0D /* NSLeftMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSLeftMenuCell.h; path = ../../NSLeftMenuCell.h; sourceTree = "<group>"; };
+		24929BB01BB4B01500857E0D /* NSLeftMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSLeftMenuCell.m; path = ../../NSLeftMenuCell.m; sourceTree = "<group>"; };
+		24929BB21BB4B12C00857E0D /* sortirovka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sortirovka.png; path = ../Images/sortirovka.png; sourceTree = "<group>"; };
+		24929BB71BB4B7AC00857E0D /* LeftMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftMenuCell.xib; sourceTree = "<group>"; };
+		24929BB91BB4B99900857E0D /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,8 +136,6 @@
 		240E4D9E1BB4858800E0FBAE = {
 			isa = PBXGroup;
 			children = (
-				24929BAF1BB4B01500857E0D /* NSLeftMenuCell.h */,
-				24929BB01BB4B01500857E0D /* NSLeftMenuCell.m */,
 				240E4DA91BB4858800E0FBAE /* ChePohavat */,
 				240E4DC31BB4858800E0FBAE /* ChePohavatTests */,
 				240E4DA81BB4858800E0FBAE /* Products */,
@@ -153,6 +157,7 @@
 				24929BA91BB4955E00857E0D /* InfoPlist.strings */,
 				24929BAA1BB4955E00857E0D /* MainStoryboard_iPad.storyboard */,
 				24929BAB1BB4955E00857E0D /* MainStoryboard_iPhone.storyboard */,
+				24929BB71BB4B7AC00857E0D /* LeftMenuCell.xib */,
 				240E4DF21BB48F7500E0FBAE /* Source */,
 				240E4DD71BB48EE100E0FBAE /* Helper Classes */,
 				240E4DD01BB4881C00E0FBAE /* Images */,
@@ -210,6 +215,8 @@
 		240E4DD71BB48EE100E0FBAE /* Helper Classes */ = {
 			isa = PBXGroup;
 			children = (
+				24929BAF1BB4B01500857E0D /* NSLeftMenuCell.h */,
+				24929BB01BB4B01500857E0D /* NSLeftMenuCell.m */,
 				240E4DD81BB48EE100E0FBAE /* FriendsViewController.h */,
 				240E4DD91BB48EE100E0FBAE /* FriendsViewController.m */,
 				240E4DDA1BB48EE100E0FBAE /* HomeViewController.h */,
@@ -222,6 +229,7 @@
 				240E4DE11BB48EE100E0FBAE /* ProfileViewController.m */,
 				240E4DE21BB48EE100E0FBAE /* RightMenuViewController.h */,
 				240E4DE31BB48EE100E0FBAE /* RightMenuViewController.m */,
+				24929BB41BB4B13400857E0D /* LeftMenuImage */,
 			);
 			path = "Helper Classes";
 			sourceTree = "<group>";
@@ -272,6 +280,15 @@
 				24929BA31BB4950D00857E0D /* SlideMenu-Prefix.pch */,
 			);
 			name = main;
+			sourceTree = "<group>";
+		};
+		24929BB41BB4B13400857E0D /* LeftMenuImage */ = {
+			isa = PBXGroup;
+			children = (
+				24929BB21BB4B12C00857E0D /* sortirovka.png */,
+				24929BB91BB4B99900857E0D /* profile.png */,
+			);
+			name = LeftMenuImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				240E4DD61BB4896F00E0FBAE /* background.png in Resources */,
+				24929BB81BB4B7AC00857E0D /* LeftMenuCell.xib in Resources */,
 				24929BAC1BB4955E00857E0D /* InfoPlist.strings in Resources */,
 				240E4DEF1BB48F5000E0FBAE /* gear.png in Resources */,
 				240E4DF01BB48F5000E0FBAE /* leftMenu.jpg in Resources */,
@@ -366,7 +384,9 @@
 				240E4DF11BB48F5000E0FBAE /* rightMenu.jpg in Resources */,
 				24929BA11BB4950400857E0D /* Default.png in Resources */,
 				240E4DD31BB4881C00E0FBAE /* che.png in Resources */,
+				24929BBA1BB4B99900857E0D /* profile.png in Resources */,
 				240E4DD41BB4881C00E0FBAE /* Без названия.tiff in Resources */,
+				24929BB31BB4B12C00857E0D /* sortirovka.png in Resources */,
 				240E4DEE1BB48F5000E0FBAE /* animation.png in Resources */,
 				240E4E091BB48F7500E0FBAE /* menu-button.png in Resources */,
 				24929BA21BB4950400857E0D /* Default@2x.png in Resources */,

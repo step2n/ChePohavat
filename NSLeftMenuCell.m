@@ -9,6 +9,8 @@
 #import "NSLeftMenuCell.h"
 
 @implementation NSLeftMenuCell
+@synthesize nameLabel = _nameLabel;
+@synthesize icon = _icon;
 
 - (void)awakeFromNib {
     // Initialization code
@@ -17,7 +19,6 @@
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 
-    // Configure the view for the selected state
-}
+    }
 
 @end
