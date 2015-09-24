@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="yzD-f0-X8n">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
@@ -70,10 +69,75 @@
             </objects>
             <point key="canvasLocation" x="11" y="49"/>
         </scene>
+        <!--Home View Controller-->
+        <scene sceneID="IJN-Bh-W7Q">
+            <objects>
+                <viewController id="f7H-Il-lfb" customClass="HomeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3mf-36-caW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="pac-9P-roe">
+                                <rect key="frame" x="-15" y="63" width="368" height="543"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="che.png" id="Tnn-B4-vpl">
+                                        <rect key="frame" x="-43" y="-63" width="411" height="171"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <searchBar contentMode="redraw" id="CVK-BM-wuF">
+                                        <rect key="frame" x="102" y="34" width="191" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="f7H-Il-lfb" id="DtP-3e-4j8"/>
+                                        </connections>
+                                    </searchBar>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" id="1Ah-ZD-yhl">
+                                        <rect key="frame" x="-5" y="103" width="378" height="423"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ny9-7n-Qks">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="K8U-cf-Pca">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="K2W-o4-sG6">
+                                <rect key="frame" x="146" y="257" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Push">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Tha-f2-JWx" kind="push" id="zQY-ZW-dzI"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchBarTextField" destination="CVK-BM-wuF" id="dJy-zm-ya1"/>
+                        <outlet property="searchDisplayController" destination="lD4-OR-Sqs" id="qDI-eW-sQ4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g8Y-wC-qx9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="lD4-OR-Sqs">
+                    <connections>
+                        <outlet property="delegate" destination="f7H-Il-lfb" id="KMI-68-55S"/>
+                        <outlet property="searchBar" destination="CVK-BM-wuF" id="Twk-aA-b23"/>
+                        <outlet property="searchContentsController" destination="f7H-Il-lfb" id="nRs-Sc-HPz"/>
+                        <outlet property="searchResultsDataSource" destination="f7H-Il-lfb" id="wpd-sU-9bC"/>
+                        <outlet property="searchResultsDelegate" destination="f7H-Il-lfb" id="uRV-iP-bAt"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="690" y="-624"/>
+        </scene>
         <!--Home-->
         <scene sceneID="7Hl-22-JcN">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="mAB-md-uek" customClass="HomeViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="mAB-md-uek" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KmS-nM-BIh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -82,16 +146,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="K2W-o4-sG6">
-                                        <rect key="frame" x="3" y="14" width="76" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Push">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="Tha-f2-JWx" kind="push" id="zQY-ZW-dzI"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slide out animation during switch" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LiR-hw-Ca7">
                                         <rect key="frame" x="14" y="64" width="150" height="51"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -175,18 +229,6 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="3av-wh-d4N">
-                                        <rect key="frame" x="9" y="344" width="301" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <segments>
-                                            <segment title="60 pixels"/>
-                                            <segment title="120 pixels"/>
-                                            <segment title="200 pixels"/>
-                                        </segments>
-                                        <connections>
-                                            <action selector="portraitSlideOffsetChanged:" destination="mAB-md-uek" eventType="valueChanged" id="WVY-3r-Evr"/>
-                                        </connections>
-                                    </segmentedControl>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Landscape slide offset" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Y2u-M6-whd">
                                         <rect key="frame" x="9" y="379" width="203" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -204,6 +246,18 @@
                                         </segments>
                                         <connections>
                                             <action selector="landscapeSlideOffsetChanged:" destination="mAB-md-uek" eventType="valueChanged" id="0Y9-hw-fq3"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="3av-wh-d4N">
+                                        <rect key="frame" x="-40" y="343" width="301" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <segments>
+                                            <segment title="60 pixels"/>
+                                            <segment title="120 pixels"/>
+                                            <segment title="200 pixels"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="portraitSlideOffsetChanged:" destination="mAB-md-uek" eventType="valueChanged" id="WVY-3r-Evr"/>
                                         </connections>
                                     </segmentedControl>
                                 </subviews>
@@ -281,6 +335,16 @@
                                 </state>
                                 <connections>
                                     <segue destination="mAB-md-uek" kind="push" id="FfU-Zw-oz1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SQv-Rt-Wxn">
+                                <rect key="frame" x="172" y="200" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="che">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="f7H-Il-lfb" kind="push" id="Fpl-Yk-VQj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -472,6 +536,10 @@
             <point key="canvasLocation" x="-458" y="371"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background.png" width="616" height="504"/>
+        <image name="che.png" width="571" height="205"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
