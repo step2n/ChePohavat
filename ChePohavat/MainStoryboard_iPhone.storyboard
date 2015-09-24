@@ -94,7 +94,7 @@
                                         </connections>
                                     </searchBar>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" id="1Ah-ZD-yhl">
-                                        <rect key="frame" x="-5" y="103" width="378" height="423"/>
+                                        <rect key="frame" x="-10" y="91" width="378" height="423"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -132,7 +132,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="690" y="-624"/>
+            <point key="canvasLocation" x="1000" y="-624"/>
         </scene>
         <!--Home-->
         <scene sceneID="7Hl-22-JcN">
@@ -279,7 +279,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wf8-rc-ajb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1040" y="-222"/>
+            <point key="canvasLocation" x="944" y="106"/>
         </scene>
         <!--No Menu-->
         <scene sceneID="b5b-is-lY2">
@@ -358,7 +358,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QC9-GK-F3v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="499" y="49"/>
+            <point key="canvasLocation" x="313" y="49"/>
         </scene>
         <!--Profile-->
         <scene sceneID="xeE-nX-pb6">
@@ -397,7 +397,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BIU-qR-dGC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1044" y="437"/>
+            <point key="canvasLocation" x="404" y="959"/>
         </scene>
         <!--Friends-->
         <scene sceneID="Hbs-BS-FvF">
