@@ -40,6 +40,7 @@
 		24929BAC1BB4955E00857E0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24929BA91BB4955E00857E0D /* InfoPlist.strings */; };
 		24929BAD1BB4955E00857E0D /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24929BAA1BB4955E00857E0D /* MainStoryboard_iPad.storyboard */; };
 		24929BAE1BB4955E00857E0D /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24929BAB1BB4955E00857E0D /* MainStoryboard_iPhone.storyboard */; };
+		24929BB11BB4B01500857E0D /* NSLeftMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24929BB01BB4B01500857E0D /* NSLeftMenuCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,8 @@
 		24929BA91BB4955E00857E0D /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		24929BAA1BB4955E00857E0D /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		24929BAB1BB4955E00857E0D /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		24929BAF1BB4B01500857E0D /* NSLeftMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSLeftMenuCell.h; sourceTree = "<group>"; };
+		24929BB01BB4B01500857E0D /* NSLeftMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSLeftMenuCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 		240E4D9E1BB4858800E0FBAE = {
 			isa = PBXGroup;
 			children = (
+				24929BAF1BB4B01500857E0D /* NSLeftMenuCell.h */,
+				24929BB01BB4B01500857E0D /* NSLeftMenuCell.m */,
 				240E4DA91BB4858800E0FBAE /* ChePohavat */,
 				240E4DC31BB4858800E0FBAE /* ChePohavatTests */,
 				240E4DA81BB4858800E0FBAE /* Products */,
@@ -395,6 +400,7 @@
 				240E4E0B1BB48F7500E0FBAE /* SlideNavigationController.m in Sources */,
 				240E4DE71BB48EE100E0FBAE /* ProfileDetailViewController.m in Sources */,
 				240E4E051BB48F7500E0FBAE /* SlideNavigationContorllerAnimatorScale.m in Sources */,
+				24929BB11BB4B01500857E0D /* NSLeftMenuCell.m in Sources */,
 				240E4E071BB48F7500E0FBAE /* SlideNavigationContorllerAnimatorSlide.m in Sources */,
 				24929BA61BB4952900857E0D /* main.m in Sources */,
 				240E4DE61BB48EE100E0FBAE /* LeftMenuViewController.m in Sources */,

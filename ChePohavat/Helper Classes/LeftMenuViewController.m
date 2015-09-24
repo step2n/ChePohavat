@@ -60,19 +60,19 @@
 	switch (indexPath.row)
 	{
 		case 0:
-			cell.textLabel.text = @"Home";
+			cell.textLabel.text = @"Сортировка";
 			break;
 			
 		case 1:
-			cell.textLabel.text = @"Profile";
+			cell.textLabel.text = @"Профиль";
 			break;
 			
 		case 2:
-			cell.textLabel.text = @"Friends";
+			cell.textLabel.text = @"Настройки";
 			break;
 			
 		case 3:
-			cell.textLabel.text = @"Sign Out";
+			cell.textLabel.text = @"Избранное";
 			break;
 	}
 	
