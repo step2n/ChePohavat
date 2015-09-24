@@ -38,7 +38,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-	return 4;
+	return 5;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
@@ -82,17 +82,23 @@
 			
 		case 1:
 			cell.nameLabel.text = @"Профиль";
-            cell.icon.image = [UIImage imageNamed:@"sortirovka.png"];
+            cell.icon.image = [UIImage imageNamed:@"profile.png"];
             
             break;
 			
 		case 2:
 			cell.nameLabel.text  = @"Настройки";
-			break;
+            cell.icon.image = [UIImage imageNamed:@"settings.png"];
+            break;
 			
 		case 3:
 			cell.nameLabel.text = @"Избранное";
+            cell.icon.image = [UIImage imageNamed:@"favorites.png"];
 			break;
+        case 4:
+            cell.nameLabel.text = @"На главную";
+            cell.icon.image = [UIImage imageNamed:@"home.png"];
+            break;
 	}
 	
 	cell.backgroundColor = [UIColor clearColor];

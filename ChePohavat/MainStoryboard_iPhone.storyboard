@@ -82,21 +82,21 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="che.png" id="Tnn-B4-vpl">
-                                        <rect key="frame" x="-43" y="-63" width="411" height="171"/>
+                                        <rect key="frame" x="-36" y="-61" width="411" height="171"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
-                                    <searchBar contentMode="redraw" id="CVK-BM-wuF">
-                                        <rect key="frame" x="102" y="34" width="191" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="f7H-Il-lfb" id="DtP-3e-4j8"/>
-                                        </connections>
-                                    </searchBar>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" id="1Ah-ZD-yhl">
                                         <rect key="frame" x="-10" y="91" width="378" height="423"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <searchBar contentMode="redraw" id="zDD-8N-vhQ">
+                                        <rect key="frame" x="111" y="34" width="196" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="f7H-Il-lfb" id="E5D-vp-qPd"/>
+                                        </connections>
+                                    </searchBar>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -117,18 +117,33 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="searchBarTextField" destination="CVK-BM-wuF" id="dJy-zm-ya1"/>
-                        <outlet property="searchDisplayController" destination="lD4-OR-Sqs" id="qDI-eW-sQ4"/>
+                        <outlet property="searchDisplayController" destination="OK8-QM-sBa" id="ey4-ho-Mjn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g8Y-wC-qx9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <searchDisplayController id="lD4-OR-Sqs">
                     <connections>
                         <outlet property="delegate" destination="f7H-Il-lfb" id="KMI-68-55S"/>
-                        <outlet property="searchBar" destination="CVK-BM-wuF" id="Twk-aA-b23"/>
                         <outlet property="searchContentsController" destination="f7H-Il-lfb" id="nRs-Sc-HPz"/>
                         <outlet property="searchResultsDataSource" destination="f7H-Il-lfb" id="wpd-sU-9bC"/>
                         <outlet property="searchResultsDelegate" destination="f7H-Il-lfb" id="uRV-iP-bAt"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="Tan-1C-7YA">
+                    <connections>
+                        <outlet property="delegate" destination="f7H-Il-lfb" id="iCO-AB-hXF"/>
+                        <outlet property="searchContentsController" destination="f7H-Il-lfb" id="7iT-KG-xfK"/>
+                        <outlet property="searchResultsDataSource" destination="f7H-Il-lfb" id="f50-Cn-l26"/>
+                        <outlet property="searchResultsDelegate" destination="f7H-Il-lfb" id="Xnf-4o-Hlv"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="OK8-QM-sBa">
+                    <connections>
+                        <outlet property="delegate" destination="f7H-Il-lfb" id="rVD-uT-saq"/>
+                        <outlet property="searchBar" destination="zDD-8N-vhQ" id="QAX-oa-HgE"/>
+                        <outlet property="searchContentsController" destination="f7H-Il-lfb" id="0vw-lI-gZy"/>
+                        <outlet property="searchResultsDataSource" destination="f7H-Il-lfb" id="xV8-DX-WMm"/>
+                        <outlet property="searchResultsDelegate" destination="f7H-Il-lfb" id="got-hl-yfs"/>
                     </connections>
                 </searchDisplayController>
             </objects>
@@ -315,32 +330,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="coh-kj-UCb">
-                                <rect key="frame" x="92" y="178" width="153" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" id="AtC-np-yyn">
+                                <rect key="frame" x="-15" y="-105" width="375" height="673"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="8yd-YN-oEY">
+                                <rect key="frame" x="21" y="88" width="92" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Push To Another PAge">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BLR-mt-TZ9" kind="push" identifier="RightMenuOnlySegue" id="yr9-GK-Pwl"/>
-                                </connections>
-                            </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="liN-HX-4nb">
-                                <rect key="frame" x="85" y="111" width="151" height="29"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gu2-3v-yFT">
+                                <rect key="frame" x="156" y="110" width="110" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="random"/>
-                                    <segment title="?"/>
-                                </segments>
-                            </segmentedControl>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="5Jz-Yy-2WY">
-                                <rect key="frame" x="37" y="260" width="216" height="34"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ics-oE-Cjj">
+                                <rect key="frame" x="156" y="139" width="110" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </slider>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="cIB-4y-aS6"/>
+                    <connections>
+                        <outlet property="lastNameLabel" destination="ics-oE-Cjj" id="dM6-s3-Sag"/>
+                        <outlet property="nameLabel" destination="gu2-3v-yFT" id="89P-Lw-fmu"/>
+                        <outlet property="photoImageView" destination="8yd-YN-oEY" id="GYC-ew-E4M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BIU-qR-dGC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

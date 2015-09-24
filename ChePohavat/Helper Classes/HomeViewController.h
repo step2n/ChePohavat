@@ -12,7 +12,8 @@
 @interface HomeViewController : UIViewController <SlideNavigationControllerDelegate>
 
 @property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
-@property (weak, nonatomic) IBOutlet UISearchBar *searchBarTextField;
+
+@property (weak, nonatomic) IBOutlet UISearchBar *searchMealSearchBar;
 
 - (IBAction)bounceMenu:(id)sender;
 - (IBAction)slideOutAnimationSwitchChanged:(id)sender;

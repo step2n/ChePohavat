@@ -44,6 +44,10 @@
 		24929BB31BB4B12C00857E0D /* sortirovka.png in Resources */ = {isa = PBXBuildFile; fileRef = 24929BB21BB4B12C00857E0D /* sortirovka.png */; };
 		24929BB81BB4B7AC00857E0D /* LeftMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24929BB71BB4B7AC00857E0D /* LeftMenuCell.xib */; };
 		24929BBA1BB4B99900857E0D /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 24929BB91BB4B99900857E0D /* profile.png */; };
+		24929BBC1BB4BA1700857E0D /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 24929BBB1BB4BA1700857E0D /* settings.png */; };
+		24929BBE1BB4BA6300857E0D /* favorites.png in Resources */ = {isa = PBXBuildFile; fileRef = 24929BBD1BB4BA6300857E0D /* favorites.png */; };
+		24929BC01BB4BB0800857E0D /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 24929BBF1BB4BB0800857E0D /* Home.png */; };
+		24929BC21BB4BD2200857E0D /* photo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 24929BC11BB4BD2200857E0D /* photo.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +117,10 @@
 		24929BB21BB4B12C00857E0D /* sortirovka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sortirovka.png; path = ../Images/sortirovka.png; sourceTree = "<group>"; };
 		24929BB71BB4B7AC00857E0D /* LeftMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftMenuCell.xib; sourceTree = "<group>"; };
 		24929BB91BB4B99900857E0D /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		24929BBB1BB4BA1700857E0D /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		24929BBD1BB4BA6300857E0D /* favorites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorites.png; sourceTree = "<group>"; };
+		24929BBF1BB4BB0800857E0D /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
+		24929BC11BB4BD2200857E0D /* photo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,8 +293,12 @@
 		24929BB41BB4B13400857E0D /* LeftMenuImage */ = {
 			isa = PBXGroup;
 			children = (
+				24929BC11BB4BD2200857E0D /* photo.jpeg */,
 				24929BB21BB4B12C00857E0D /* sortirovka.png */,
 				24929BB91BB4B99900857E0D /* profile.png */,
+				24929BBD1BB4BA6300857E0D /* favorites.png */,
+				24929BBF1BB4BB0800857E0D /* Home.png */,
+				24929BBB1BB4BA1700857E0D /* settings.png */,
 			);
 			name = LeftMenuImage;
 			sourceTree = "<group>";
@@ -378,19 +390,23 @@
 				240E4DF01BB48F5000E0FBAE /* leftMenu.jpg in Resources */,
 				240E4DBB1BB4858800E0FBAE /* LaunchScreen.xib in Resources */,
 				240E4E0A1BB48F7500E0FBAE /* menu-button@2x.png in Resources */,
+				24929BC21BB4BD2200857E0D /* photo.jpeg in Resources */,
 				24929BAE1BB4955E00857E0D /* MainStoryboard_iPhone.storyboard in Resources */,
 				24929BA71BB4952900857E0D /* SlideMenu-Info.plist in Resources */,
 				24929BA01BB4950400857E0D /* Default-568h@2x.png in Resources */,
 				240E4DF11BB48F5000E0FBAE /* rightMenu.jpg in Resources */,
 				24929BA11BB4950400857E0D /* Default.png in Resources */,
+				24929BC01BB4BB0800857E0D /* Home.png in Resources */,
 				240E4DD31BB4881C00E0FBAE /* che.png in Resources */,
 				24929BBA1BB4B99900857E0D /* profile.png in Resources */,
+				24929BBC1BB4BA1700857E0D /* settings.png in Resources */,
 				240E4DD41BB4881C00E0FBAE /* Без названия.tiff in Resources */,
 				24929BB31BB4B12C00857E0D /* sortirovka.png in Resources */,
 				240E4DEE1BB48F5000E0FBAE /* animation.png in Resources */,
 				240E4E091BB48F7500E0FBAE /* menu-button.png in Resources */,
 				24929BA21BB4950400857E0D /* Default@2x.png in Resources */,
 				24929BAD1BB4955E00857E0D /* MainStoryboard_iPad.storyboard in Resources */,
+				24929BBE1BB4BA6300857E0D /* favorites.png in Resources */,
 				240E4DB81BB4858800E0FBAE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
