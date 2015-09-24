@@ -5,7 +5,7 @@
 //  Created by Nik on 24.09.15.
 //  Copyright (c) 2015 Nik. All rights reserved.
 //
-fgd
+
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
